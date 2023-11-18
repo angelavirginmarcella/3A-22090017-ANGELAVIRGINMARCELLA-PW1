@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+body{
+        background: #427D9D;
+        color: #ededed;
+        }
+
+header {
+    background-color: #3333332a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #66666600;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.home{
+            height: 100vh;
+            background: url('foto2.png') no-repeat;
+            background: cover;
+            background-position: right;
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+        }
+        .home-content{
+            max-width: 600px;
+        }
+        .home-content h1{
+            font-size: 56px;
+            font-weight:700; 
+            line-height: 1.2;
+        }
+        .home-content h3{
+            font-size: 32px;
+            font-weight: 700;
+            color: #00abf0;
+        }
+        .home-content p{
+            font-size: 16px;
+            margin: 20px 40px;}
+            
+
+section {
+    padding: 20px;
+}
+
+h1, h2, p {
+    color: #333;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            width: 100%; 
+            max-width: 1000px; 
+            margin: 0 auto;
+        }
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .photo-card {
+            flex-basis: calc(33.33% - 20px); 
+            margin: 10px;
+            text-align: center;
+        }
+        .photo-card img {
+            max-width: 100%;
+        }
+        .photo-card p {
+            margin-top: 10px;
+            color: #ededed;
+        }
+
+        .project-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .project-info img {
+            margin-right: 20px; 
+        }
+        table, th, td {
+            border: 1px solid #00abf0;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: #00acf050;
+            color: white;
+        }
+        td {
+            vertical-align: top;
+        }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Angelavrgn.ffg</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <form id="searchForm">
+            <input type="text" id="search" placeholder="Masukkan Kata Kunci" required>
+            <button type="button" onclick="cari()">Cari</button>
+        </form>
+    
+        <script>
+            function cari() {
+                var searchKeyword = document.getElementById('search').value;
+                console.log('Search keyword: ' + searchKeyword);
+                  }
+        </script>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Angela</h1>
+            <h3>Student of Politeknik Harapan Bersama</h3>
+            <p>I am currently pursuing my education in the third semester of college. I am enrolled in the D4 Informatic Engineering program.</p>
+            <div class="btn-box">
+                <a href="#">See more</a>
+                <a href="#">Let's Talk</a>
+            </div>
+    </section>
+
+    <section id="about" style="display: flex; align-items: center;">
+        <img src="foto1.png" alt="Profile Picture" style="width: 200px; height: 200px; margin-right: 20px;">
+        <div>
+            <h2>About Me</h2>
+            <p style="text-align: justify; margin-right: 100px;">
+                Saya adalah seorang mahasiswa Politeknik Harapan Bersama dengan Program Studi Teknik Informatika. Sebagai seorang mahasiswa, saya senantiasa berusaha untuk menggali ilmu dan pengalaman sebanyak mungkin dalam perjalanan pendidikan saya. Saya aktif terlibat dalam kegiatan akademis dan organisasi, dengan tujuan untuk tidak hanya meraih prestasi akademis yang baik, tetapi juga mengembangkan keterampilan interpersonal dan kepemimpinan. Saya aktif dalam organisasi BPM (Badan Perwakilan Mahasiswa), dan mengikuti Study Club Forty.
+            </p>
+            
+            <p style="text-align: justify; margin-right: 100px; padding-bottom: 50px;">
+                Saya memiliki tekad untuk mencapai tujuan saya dan berusaha untuk menjadikan setiap langkah dalam perjalanan hidup ini sebagai kesempatan untuk belajar dan tumbuh. Saya selalu bersemangat untuk menghadapi tantangan baru, berkolaborasi dengan orang-orang yang inspiratif, dan berkontribusi pada kesuksesan tim atau organisasi.
+                Terima kasih telah meluangkan waktu untuk memahami sedikit tentang saya. Saya sangat berharap untuk dapat berkontribusi pada proyek atau tim Anda dan terlibat dalam perjalanan menuju pencapaian tujuan bersama.
+            </p>
+        </div>
+    </section>
+    <h1>DATA DIRI</h1>
+    <p><strong>Nama:</strong> Angela Virgin Marcella</p>
+                <p><strong>TTL:</strong> Tegal, 22 November 2004</p>
+                <p><strong>Alamat:</strong> Pesurungan Kidul, Kota Tegal</p>
+                <p><strong>Riwayat Pendidikan:</strong></p>
+                <ul>
+                    <li>SD Negeri Pesurungan Kidul 02</li>
+                    <li>MTs Negeri Margadana</li>
+                    <li>SMK Muhammadiyah 1 Tegal</li>
+                </ul>
+<table>
+    <tr>
+        <td style="vertical-align: top; padding-right: 20px;">
+            <section class="resumepengalaman">
+                <b style="font-size: 16px;">Work Samples</b>
+            </section>
+        </td>
+        <td>
+            <section class="resumepengalaman">
+                <div class="project-info">
+                    <img src="fotofigma2.jpg" alt="" width="400">
+                    <p>
+                        Diatas adalah projek pembuatan Desain WEB untuk WEB Pembayaran SPP Non Tunai. Projek ini merupakan Projrk UAS Mata Kuliah Analisis Desain Perangkat Lunak yang diampu Bapak Ginanjar Wiro Sasmito M.Kom.
+                    </p>
+                </div>
+                <div class="project-info">
+                    <img src="fotofigma.jpg" alt="" width="100">
+                    <p>
+                        Diatas adalah projek pembuatan aplikasi Skincare yang saya beri nama "SKINCARE APP" Projek ini merupakan projek UAS Mata Kuliah Interaksi Manusia dan Komputer yang diampu oleh Bu Dwi Intan Af'idah M.Kom.                </div>
+            </section>
+            
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: top; padding-right: 20px;">
+            <section class="resumepengalaman">
+                <b style="font-size: 16px;">Resume Invofest</b>
+            </section>
+        </td>
+        <td style="vertical-align: top; padding-right: 20px;">
+            <section class="resumepengalaman">
+            <p> <b>A. Materi Tentang Tips meniti karir dibidang teknologi</b> <br>
+                Komerce adalah perusahaan teknologi yang berfokus untuk mempermudah operasional bisnis online UMKM dari hulu ke hilir.
+                Ada 8 produk dari komerce <br>
+                    1.	Komtim  (Platform penyedia tim operasional e-commerce siap pakai) <br>
+                    2.	Komship (Platform manajemen pengiriman) <br>
+                    3.	Kompack (Platform manajemen pergudangan) <br>
+                    4.	Komclass (Platform peningkatan kapasitas bisnis online) <br>
+                    5.	Komplace (Platform manajemen marketplace) <br>
+                    6.	Pendamping UMKM  ( Pendamping bisnis online di kotamu) <br>
+                    7.	Komcards (Kartu debit virtual-nya pebisnis online) <br>
+                    8.	Komfrom  (Form builder khusus buat pebisnis online) <br>
+                </p>
+            <p>
+                <b>B. Materi Tentang PT IVATAMA TEKNOLOGI COMPANY PROFIL 2022</b>
+                Materi ini menjelaskan tentang Penawaran Layanan Profesional,dimana di dalam nya mempunyai 4 macam,yaitu:
+1.	Pengembangan Aplikasi <br>
+•	Konsol dan Aplikasi Berbasis Web <br>
+•	Aplikasi Seluler <br>
+•	Aplikasi dalam Kontainer <br>
+•	Insinyur DevOps <br>
+2.	Proyek Implementasi
+•	Manajemen proyek
+•	Analis Bisnis
+•	Konfigurasi 
+•	Kustomisai 
+•	Pengujian 
+•	Dokumentasi 
+•	Tranfer Pengetahuan
+3.	Infrastruktur & Middleware
+•	Telanjang Logam
+•	Platform Virtualisasi
+•	Platform Kontainer
+•	Server Aplikasi
+•	Manajemen API
+•	Konfigurasi & Otomatisas
+4.	Dukungan Pemeliharaan
+•	Pemeliharaan Korektif
+•	Pemeliharaan Preventif
+
+                        
+                    </p>
+
+            
+        </td>
+    </tr>
+</table>
+<script>
+    
+    function createResumePengalaman() {
+        const resumeSection = document.createElement('section');
+        resumeSection.innerHTML = `
+            <h2 style="text-align: center; padding-top: 40px;">Resume Pengalaman</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="fotokpr.png" alt="Foto 1">
+                    <p>Anggota KPR 2023</p>
+                </div>
+                <div class="photo-card">
+                    <img src="resumesmk.png" alt="Foto 2">
+                    <p>Sekertaris Organisasi IPM SMK Muhammdiyah 1 Tegal</p>
+                </div>
+                <div class="photo-card">
+                    <img src="fotoresume.png" alt="Foto 3">
+                    <p>Panitia PKKMB 2023</p>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(resumeSection);
+    }
+    createResumePengalaman();
+</script>
+    
+
+<hr>
+<p style="text-align: center;">Instagram: <a href="https://instagram.com/angelavrgn?igshid=OGQ5ZDc2ODk2ZA==">Instagram.com/angelavrgn_</a></p>
+<p style="text-align: center;">Email: <a href=""></a>angelavirginm@gmail.com</p>
+<hr>
+</div>
+</body>
+</html>
